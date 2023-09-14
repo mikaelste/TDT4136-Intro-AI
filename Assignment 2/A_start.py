@@ -1,6 +1,3 @@
-import Map
-
-
 class Node:
     def __init__(self, position):
         self.parent = None
@@ -158,9 +155,3 @@ class AStarSearch:
             return self.backtrack_and_visualize(final_node)
         else:
             print("Failed")
-
-
-if __name__ == "__main__":
-    map_task = Map.Map_Obj(task=4)
-    astar = AStarSearch(map_task)
-    astar.find_shortest_path()
